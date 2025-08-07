@@ -1,0 +1,74 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-text: #333333;
+
+  --color-bg-dark: #212529;
+  --color-win-dark: #2a2e32;
+
+  --color-white: #fcfcfc;
+  --color-light-border: #dbdbdb;
+  --color-light-sideBarPullDown: #f1f1f1;
+
+  --color-light-hover: #dbdbdb;
+
+  --text-h1: 32px;
+  --text-h2: 28px;
+  --text-h3: 24px;
+  --text-txt: 14px;
+  --text-button: 14px;
+  --text-small: 10px;
+}
+
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: #333333;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  transition-duration: 0.3s;
+}
+
+a:hover {
+  color: #9f9f9f;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 32px;
+  font-weight: bold;
+}
+h2 {
+  font-size: 28px;
+  font-weight: bold;
+}
+h3 {
+  font-size: 24px;
+  font-weight: bold;
+}
+p {
+  font-size: 16px;
+}
+a {
+  text-decoration: none;
+}
+small {
+  font-size: 10px;
+}
